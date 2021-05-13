@@ -444,6 +444,6 @@ app.get('/1/:batalla', fun01);
 app.get('/Cargar', funP01);
 app.get('/2/:batalla', fun02);
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`Listening...`);
 });
